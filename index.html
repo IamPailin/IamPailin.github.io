@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pailin's Personal Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f4f4f4, #e8f0fe);
+            color: #333;
+        }
+
+        header {
+            background-color: #800000;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            color: #800000;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Shimon's mum page</h1>
+    </header>
+    <main>
+        <div class="card">
+            <img src="IMG_0642.jpg" alt="Shimon the cat">
+            <h2>About Me</h2>
+            <p>Hello! I am <strong>Pailin</strong>, also known as Phonvan Deelertpattana. That's my cat, Shimon, in the photo.</p>
+        </div>
+
+        <div class="card">
+            <h2>Hobbies</h2>
+            <p>I enjoy watching anime and movies, gardening, and experimenting in the kitchen with my fav recipes. I love learning and exploring new things too!</p>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p>Catch me if you can 😉</p>
+        </div>
+    </main>
+</body>
+</html>
+
