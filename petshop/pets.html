@@ -25,7 +25,16 @@
     </section>
   </main>
 
-  <script src="pets.js"></script>
+   <!-- Adoption Modal (copy from index.html) -->
+   <div id="adoptionModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>🎉 Adoption Request</h3>
+      <p id="adoptionMessage"></p>
+      <button onclick="closeModal()">Great!</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
