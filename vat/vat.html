@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Loan Calculator</title>
+</head>
+<body>
+
+<h1>Car Loan Calculator</h1>
+<div class="calculator">
+    <label for="loanAmount">Loan Amount ($):</label>
+    <input type="number" id="loanAmount" placeholder="Enter loan amount" oninput="calculateLoan()">
+
+    <label for="downPayment">Down Payment ($):</label>
+    <input type="number" id="downPayment" placeholder="Enter down payment" oninput="calculateLoan()">
+
+    <label for="interestRate">Interest Rate (%):</label>
+    <input type="number" id="interestRate" placeholder="Enter interest rate" oninput="calculateLoan()">
+
+    <label for="loanTerm">Loan Term (months):</label>
+    <select id="loanTerm" onchange="calculateLoan()">
+        <option value="12">12</option>
+        <option value="24">24</option>
+        <option value="36">36</option>
+        <option value="48">48</option>
+        <option value="60">60</option>
+    </select>
+
+    <input type="button" value="Calculate" onclick="calculateLoan()">
+
+    <div class="result">
+        <p><strong>Monthly Payment:</strong> <span id="monthlyPayment">0.00</span></p>
+        <p><strong>Total Loan Amount:</strong> <span id="totalLoanAmount">0.00</span></p>
+        <p><strong>Total Interest Paid:</strong> <span id="totalInterest">0.00</span></p>
+    </div>
+</div>
+</body>
+</html>

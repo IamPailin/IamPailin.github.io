@@ -19,6 +19,15 @@
   <main>
     <section class="featured">
       <h2>Available for Adoption</h2>
+      <div style="display: flex; gap: 24px; justify-content: center; margin-bottom: 20px;">
+        <label>Type:</label>
+        <div style="display: flex; gap: 12px;">
+          <label><input type="checkbox" class="filter-checkbox" id="type-dogs" name="pet-type" value="Dog" checked /> Dogs</label>
+          <label><input type="checkbox" class="filter-checkbox" id="type-cats" name="pet-type" value="Cat" checked /> Cats</label>
+          <label><input type="checkbox" class="filter-checkbox" id="type-capybaras" name="pet-type" value="Capybara" checked /> Capybaras</label>
+          <label><input type="checkbox" class="filter-checkbox" id="type-birds" name="pet-type" value="Bird" checked /> Birds</label>
+        </div>
+      </div>
       <div class="pet-list" id="pet-list">
         <!-- Pets will load here -->
       </div>
@@ -35,6 +44,7 @@
     </div>
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="pets.js"></script>
   <script src="script.js"></script>
 </body>

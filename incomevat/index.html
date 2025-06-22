@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAT Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VAT Calculator</h1>
+        <div class="calculator">
+            <section>
+                <h2>Calculate VAT (Price → Price + VAT)</h2>
+                <label for="basePrice">Base Price (excluding VAT):</label>
+                <input type="number" id="basePrice" placeholder="Enter base price" oninput="calculate()">
+                <label for="vatRate">VAT Rate (%):</label>
+                <input type="number" id="vatRate" placeholder="Enter VAT rate" oninput="calculate()">
+                <p>Base Price: <span id="basePriceOutput">$0.00</span></p>
+                <p>VAT Amount: <span id="vatAmount">$0.00</span></p>
+                <p>Total (inc. VAT): <span id="totalPrice">$0.00</span></p>
+            </section>
+            <section>
+                <h2>Reverse Calculate VAT (Price + VAT → Price)</h2>
+                <label for="totalPriceInput">Total Price (including VAT):</label>
+                <input type="number" id="totalPriceInput" placeholder="Enter total price" oninput="reverseCalculateVAT()">
+                <label for="vatRateInput">VAT Rate (%):</label>
+                <input type="number" id="vatRateInput" placeholder="Enter VAT rate" oninput="reverseCalculateVAT()">
+                <p>Base Price: <span id="basePriceReverse">$0.00</span></p>
+                <p>VAT Amount: <span id="vatAmountReverse">$0.00</span></p>
+                <p>Total (inc. VAT): <span id="totalPriceReverse">$0.00</span></p>
+            </section>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
